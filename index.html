@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <span class="logo">Shopping Cart Web Application</span>
+        <ul class="nav-links">
+            <li><a class="link" href="#">Breakfast</a></li>
+            <li><a class="link" href="#">Lunch</a></li>
+            <li><a class="link" href="#">Dinner</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-toggle">
+            🛒 <span id="cart-badge">0</span>
+        </div>
+    </nav>
+
+    <!-- Food List -->
+    <div class="main-content">
+        <h2>Menu</h2>
+        <div id="product-list"></div>
+    </div>
+
+    <!-- Cart Panel -->
+    <div id="cart-panel" class="cart-panel">
+        <h3>Shopping Cart</h3>
+        <div id="cart-items"></div>
+        <h4 id="cart-total">Total: ₹0</h4>
+        <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
