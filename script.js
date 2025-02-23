@@ -112,8 +112,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     cartToggle.addEventListener("click", () => {
-        cartPanel.classList.toggle("visible");
+        if (cartPanel.style.right === "0px") {
+            cartPanel.style.right = "-320px"; // Hide the cart
+        } else {
+            cartPanel.style.right = "0px"; // Show the cart
+        }
     });
+    
 
     clearCartButton.addEventListener("click", () => {
         cart = [];
